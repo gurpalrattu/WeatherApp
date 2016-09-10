@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 3: Weather App</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="assignment3.js"></script>
+</head>
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="col s12 orange lighten-2 center" id="headerDiv">
+      <h3>Assignment 3: Weather App</h3>
+      <h5>[Group 2]</h5>
+    </div>
+  </div>
+  <div class="row"></div>
+  <div class="row">
+  <form class="col s12">
+    <div class="row">
+          <div class="input-field col s4">
+            <input placeholder="Enter a Canadian city name" id="city" type="text" class="validate">
+            <label class="active" for="city">City</label>
+          </div>
+          <div class="input-field col s1 flow-text">OR </div>
+          <div class="input-field col s4">
+            <input placeholder="Enter a Canadian postal code" id="postalCode" type="text" class="validate">
+            <label class="active" for="postalCode">Postal Code</label>
+          </div>
+          <div class="col s3"><a id="weatherButton" class="waves-effect waves-light btn" onclick="loadData()">Check Weather</a></div>
+    </div>
+  </form>
+</div>
+  <div class="row">
+    <div class="col s12" id="dataDiv">
+      <!-- All the content from ajax call should o here-->
+      <table class="striped">
+        <tr>
+          <td id="weatherIcon">
+          	<div id = "icon"></div>
+          	<div id = "description"></div>
+          </td>
+        </tr>
+        <tr align ="center">
+          <td id="cityName"></td>
+        </tr>
+        <tr>
+          <td id="temperature"></td>
+        </tr>
+        <tr>
+          <td id="humidity"></td>
+        </tr>
+        <tr>
+          <td id="windSpeed"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+</div>  <!-- end container -->
+<script src="assignment3.js"></script>
+</body>
+</html>
